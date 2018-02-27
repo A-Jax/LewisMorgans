@@ -4,11 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node app.js",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "node app.js"
   },
   "private": true,
   "dependencies": {
