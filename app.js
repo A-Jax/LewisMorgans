@@ -67,7 +67,7 @@ app.use('/user', users);
 
 //catch all routes and send to Angular Router.
 app.get('*/', (req, res) => { 
-    res.sendfile(path.join(__dirname + '/dist/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/index.html'));
 })
 
 // Set listening port
