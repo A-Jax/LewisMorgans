@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node app.js",
-    "postinstall": "ng build"
+    "start": "node app.js"
   },
   "private": true,
   "dependencies": {
