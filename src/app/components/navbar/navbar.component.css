@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Title;
+    src: url('../../../assets/fonts/KaushanScript-Regular.ttf')
+}
+
+.navbar li {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.42;
+    font-weight: 500;
+    
+}
+
+.nameTitle {
+    font-family: Title;
+    font-size: 33px;
+    font-weight: 570;
+    font-style: italic
+}

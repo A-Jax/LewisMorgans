@@ -1,0 +1,44 @@
+.col-md-6 {
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+}
+
+.card-body {
+    background-color: #EDEDED
+}
+
+button {
+    background-color: #5C4F5E;
+    color: #EDEDED
+}
+
+#about {
+    z-index: 50;
+    position: fixed;
+    text-align: center
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 1226px) {
+    #about {
+        display: none;
+    }
+   
+   } 
+
+@media only screen and (max-width: 500px) {
+ #about {
+     display: none;
+ }
+
+ .col-md-6 {
+     margin: 0 auto;
+ }
+} 

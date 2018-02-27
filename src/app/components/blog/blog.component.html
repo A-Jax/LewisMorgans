@@ -1,0 +1,37 @@
+<div class="container-fluid mt-3">
+  <div id="about" class="col-md-1 mr-auto">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="../../../assets/img/lew1.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Hi, I'm Lewis.
+          <br>
+          <br> Software Engineer/Tech enthusiast.
+          <br> Welcome to my blog, where you can keep up to date on what I'm doing!</p>
+        <a href="https://github.com/A-Jax" target="_blank">
+          <img src="../../../assets/img/github.svg">
+        </a>
+        <a href="https://www.linkedin.com/in/lewis-morgans-5b2919146/" target="_blank">
+          <img src="../../../assets/img/linkedin.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div *ngFor="let i of allBlogs" class="row mt-3">
+    <div class="col-md-6 mx-auto" style="background-color: #EDEDED">
+      <div>
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{i.title}}</h5>
+            <p class="card-text ellipsis" [innerHTML]='i.details'></p>
+            <p>{{i.date | date: 'short'}}</p>
+            <!-- <button class="btn" (click)="viewMore()">Read More</button> -->
+            <button *ngIf="isLoggedin" class="btn btn-danger" (click)="deletePost((i._id))">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

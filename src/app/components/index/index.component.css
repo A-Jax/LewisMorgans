@@ -1,0 +1,144 @@
+
+@font-face {
+    font-family: Header;
+    src: url('../../../assets/fonts/header.ttf')
+}
+
+#testbtn {
+    z-index: 50;
+    position: static;
+}
+
+p {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+}
+
+h4 {
+    text-align: center;
+     margin: 15px;
+}
+.row {
+    margin: 0 0;
+    padding: 0;
+}
+
+.col-md-12 {
+    margin: 0 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+    font-size: 55px;
+    color: #3F3640;
+}
+
+.imgCenter {
+    display: block;
+    margin: 0 auto;
+}
+
+input {
+    transition: 0.2s all;
+    background-color: #3F3640;
+    color: white;
+}
+
+input:focus {
+    transform: scale(1.05);
+    transition: 0.2s all;
+    border-color: #3F3640;
+    background-color: #3F3640;
+    color: white;
+    
+}
+
+textarea {
+    transition: 0.2s all;
+    background-color: #3F3640;
+    color: white;
+}
+
+textarea:focus {
+    transition: 0.2s all;
+    transform: scale(1.05);
+    border-color: #3F3640;
+    background-color: #3F3640;
+    color: white;
+}
+
+hr{
+    border: 0.6px solid #EDEDED;
+ }
+
+ .card {
+     background-color: transparent;
+   border: none;
+ }
+
+ .card-title {
+     text-align: center;
+     color: #3F3640;
+     
+ }
+
+ .card-text {
+     text-align: center;
+     color: #3F3640
+     
+ }
+
+ .card-img-top {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .card-img-topAlt {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ label {
+     color: white;
+ }
+
+ #header {
+     background-image: url('../../../assets/img/slider1.jpg');
+     height: 550px;
+ }
+
+ .headerText {
+    color: white;
+     text-align: center;
+      margin-top: 200px;
+      font-family: Header;
+ }
+
+ .white {
+     color: #EDEDED
+ }
+ a {
+     text-decoration: none;
+ }
+
+ @media only screen and (max-width: 500px) {
+    #header {
+        height: 300px;
+    }
+
+    .headerText {
+        color: white;
+         text-align: center;
+          margin-top: 50px;
+          font-size: 46px;
+     }
+
+     .map {
+         display: none;
+     }
+} 

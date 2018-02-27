@@ -1,0 +1,34 @@
+input {
+    transition: 0.2s all;
+    background-color: #3F3640;
+    color: white;
+}
+
+input:focus {
+    transform: scale(1.05);
+    transition: 0.2s all;
+    border-color: white;
+    background-color: #3F3640;
+    color: white;
+    outline-style:none;
+    box-shadow: none;
+    border-color: white;
+    
+}
+
+label {
+    color: white;
+}
+
+.col-md-3 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+button {
+    background-color: #5C4F5E
+}
+
+button:hover {
+    background-color: #615363
+}

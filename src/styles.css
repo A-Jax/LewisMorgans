@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: paragraph;
+    src: url('./assets/fonts/paragraph.ttf')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.alert {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: paragraph;
+}

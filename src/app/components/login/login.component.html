@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-3 mx-auto">
+      <img src="../../../assets/img/lew.png" style="margin-left: 35%; border-radius: 13%; width: 30%">
+      <div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input required type="email" class="form-control" [(ngModel)]="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input required type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Password">
+        </div>
+        <button type="submit" (click)="login((email), (password))" class="btn btn-block">Sign In</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
