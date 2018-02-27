@@ -23,7 +23,7 @@ mongoose.connect(db.mongoURI, {
 // Body-Parser middleware
 app.use(bodyParser.urlencoded({limit: '50mb'}));
 app.use(bodyParser.json({limit: '50mb'}));
-// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 const blogs = require('./routes/blog'); // import custom routing
 const users = require('./routes/user');
