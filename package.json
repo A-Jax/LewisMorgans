@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node app.js",
-    "postinstall": "ng build"
+    "postinstall": "ng build --prod --aot=false --build-optimizer=false"
   },
   "private": true,
   "dependencies": {
