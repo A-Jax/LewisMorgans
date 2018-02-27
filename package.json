@@ -2,7 +2,7 @@
   "name": "jax-web-studios",
   "version": "0.0.0",
   "license": "MIT",
-  "main" : "app.js",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
     "start": "app.js",
@@ -38,7 +38,8 @@
     "rxjs": "^5.5.6",
     "sendgrid": "^5.2.3",
     "timers": "^0.1.1",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "typescript": "~2.5.3"
   },
   "devDependencies": {
     "@angular/cli": "1.6.6",
@@ -64,5 +65,4 @@
     "node": "8.9.4",
     "npm": "5.6.0"
   }
-
 }
