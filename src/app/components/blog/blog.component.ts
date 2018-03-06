@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogserviceService } from '../../services/blogservice.service';
 import { UsersService } from '../../services/user.service'
-import { SafeHtmlComponent } from '../../pipes/safe-html/safe-html.component'
+import { SafeHtmlPipe } from '../../pipes/safe-html.pipe'
 
 @Component({
   selector: 'app-blog',
