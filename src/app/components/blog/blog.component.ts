@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogserviceService } from '../../services/blogservice.service';
 import { UsersService } from '../../services/user.service'
+import { SafeHtmlComponent } from '../../pipes/safe-html/safe-html.component'
 
 @Component({
   selector: 'app-blog',
@@ -25,6 +26,7 @@ export class BlogComponent implements OnInit {
         this.isLoggedin = true;
       }
     })
+    
   }
 
   findAll() {

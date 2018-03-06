@@ -16,22 +16,20 @@
       </div>
     </div>
   </div>
-</div>
-<div class="container">
+</div> 
+ <div class="container">
   <div *ngFor="let i of allBlogs" class="row mt-3">
     <div class="col-md-6 mx-auto" style="background-color: #EDEDED">
       <div>
         <div class="card" style="width: 100%;">
-          <div class="card-body">
+          <div class="card-body" style="width: 100%">
             <h5 class="card-title">{{i.title}}</h5>
-            <p class="card-text ellipsis" [innerHTML]='i.details'></p>
+            <p class="card-text ellipsis" style="width: 100%" [innerHTML]='i.details | safeHtml'></p>
             <p>{{i.date | date: 'short'}}</p>
-            <!-- <button class="btn" (click)="viewMore()">Read More</button> -->
             <button *ngIf="isLoggedin" class="btn btn-danger" (click)="deletePost((i._id))">Delete</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>

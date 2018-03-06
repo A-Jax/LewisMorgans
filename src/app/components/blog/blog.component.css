@@ -19,12 +19,7 @@ button {
     text-align: center
 }
 
-.ellipsis {
-    text-overflow: ellipsis;
-    /* Required for text-overflow to do anything */
-    white-space: nowrap;
-    overflow: hidden;
-  }
+
 
   @media only screen and (max-width: 1226px) {
     #about {

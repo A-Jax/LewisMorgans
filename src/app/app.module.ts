@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,  Pipe, PipeTransform } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +18,7 @@ import { BlogserviceService } from './services/blogservice.service';
 import { UsersService } from './services/user.service'
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe'
 
 const appRoutes: Routes = [
   { path: '', component: IndexComponent },
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
 
 ]
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     BlogComponent,
     NewBlogComponent,
     ViewBlogComponent,
-    RegisterComponent
+    RegisterComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,9 @@ const appRoutes: Routes = [
     BlogserviceService,
     UsersService,
     AuthGuard
+  ],
+  exports: [
+    SafeHtmlPipe
   ],
   bootstrap: [AppComponent]
 })
